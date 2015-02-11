@@ -1,0 +1,14 @@
+为了能够兼顾识别
+a = (a * b)
+(Elem * )a;
+这两种类型的数据
+将action169 * 223 -=> 117
+
+
+
+为了兼顾一下的代码
+stream_ptr=(character_stream)malloc(sizeof(struct stream_type));    // 117
+n = (int) (count*ratio + 1);
+return (a);
+修改了action169 ) ) 223 -=> 117
+

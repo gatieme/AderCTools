@@ -1,0 +1,1 @@
+state	receive		action		state/(nontermainalID,subID):

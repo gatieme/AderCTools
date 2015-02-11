@@ -1,0 +1,164 @@
+begin to word analyze ````
+RetrivalCode finished !
+
+Word Analyze Succeed !
+Begin Loading C Grammar¡¤¡¤¡¤
+Total None Terminates : 73
+Total Right Productions :242
+Finished Loading C Grammar!
+
+
+FRIST Sets :
+if-line	 :   #	
+
+inclusive-OR-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+unary-operator	 :   !	&	*	+	-	~	
+
+declarator	 :   (	*	identifier	
+
+identifier-list	 :   identifier	
+
+struct-or-union-specifier	 :   struct	union	
+
+type-qualifier-list	 :   const	volatile	
+
+type-specifier	 :   char	double	float	int	long	short	signed	unsigned	void	
+
+abstract-declarator	 :   (	*	[	
+
+cast-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+else-part	 :   #	
+
+expression-statement	 :   !	&	(	*	+	++	-	--	;	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+pointer	 :   *	
+
+unary-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+external-declaration	 :   (	*	auto	char	const	double	extern	float	identifier	int	long	register	short	signed	static	typedef	unsigned	void	volatile	
+
+function-definition	 :   (	*	auto	char	const	double	extern	float	identifier	int	long	register	short	signed	static	typedef	unsigned	void	volatile	
+
+init-declarator	 :   (	*	identifier	
+
+multiplicative-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+storage-class-specifier	 :   auto	extern	register	static	typedef	
+
+declaration	 :   auto	char	const	double	extern	float	int	long	register	short	signed	static	typedef	unsigned	void	volatile	
+
+declaration-list	 :   auto	char	const	double	extern	float	int	long	register	short	signed	static	typedef	unsigned	void	volatile	
+
+preprocessor-conditional	 :   #	
+
+enum-specifier	 :   enum	
+
+equality-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+logical-AND-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+type-name	 :   char	const	double	float	int	long	short	signed	unsigned	void	volatile	
+
+logical-OR-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+parameter-declaration	 :   auto	char	const	double	extern	float	int	long	register	short	signed	static	typedef	unsigned	void	volatile	
+
+struct-declarator	 :   (	*	:	identifier	
+
+typedef-name	 :   identifier	
+
+additive-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+specifier-qualifier-list	 :   char	const	double	float	int	long	short	signed	unsigned	void	volatile	
+
+struct-declaration-list	 :   char	const	double	float	int	long	short	signed	unsigned	void	volatile	
+
+struct-or-union	 :   struct	union	
+
+STARTER	 :   (	*	auto	char	const	double	extern	float	identifier	int	long	register	short	signed	static	typedef	unsigned	void	volatile	
+
+enumerator-list	 :   identifier	
+
+initializer	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	{	~	
+
+labeled-statement	 :   case	default	identifier	
+
+statement	 :   !	&	(	*	+	++	-	--	;	break	case	character-constant	continue	default	do	enumeration-constant	floating-constant	for	goto	identifier	if	integer-constant	return	sizeof	string-constant	switch	while	{	~	
+
+type-qualifier	 :   const	volatile	
+
+assignment-operator	 :   %=	&=	*=	+=	-=	/=	<<=	=	>>=	^=	|=	
+
+elif-parts	 :   #	
+
+else-line	 :   #	
+
+initializer-list	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	{	~	
+
+struct-declarator-list	 :   (	*	:	identifier	
+
+compound-statement	 :   {	
+
+parameter-type-list	 :   auto	char	const	double	extern	float	int	long	register	short	signed	static	typedef	unsigned	void	volatile	
+
+postfix-expression	 :   (	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	string-constant	
+
+primary-expression	 :   (	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	string-constant	
+
+direct-declarator	 :   (	identifier	
+
+iteration-statement	 :   do	for	while	
+
+struct-declaration	 :   char	const	double	float	int	long	short	signed	unsigned	void	volatile	
+
+direct-abstract-declarator	 :   (	[	
+
+expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+shift-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+statement-list	 :   !	&	(	*	+	++	-	--	;	break	case	character-constant	continue	default	do	enumeration-constant	floating-constant	for	goto	identifier	if	integer-constant	return	sizeof	string-constant	switch	while	{	~	
+
+constant	 :   character-constant	enumeration-constant	floating-constant	integer-constant	string-constant	
+
+declaration-specifiers	 :   auto	char	const	double	extern	float	int	long	register	short	signed	static	typedef	unsigned	void	volatile	
+
+enumerator	 :   identifier	
+
+init-declarator-list	 :   (	*	identifier	
+
+relational-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+AND-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+constant-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+control-line	 :   #	
+
+elif-line	 :   #	
+
+jump-statement	 :   break	continue	goto	return	
+
+parameter-list	 :   auto	char	const	double	extern	float	int	long	register	short	signed	static	typedef	unsigned	void	volatile	
+
+selection-statement	 :   if	switch	
+
+translation-unit	 :   (	*	auto	char	const	double	extern	float	identifier	int	long	register	short	signed	static	typedef	unsigned	void	volatile	
+
+argument-expression-list	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+assignment-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+exclusive-OR-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+conditional-expression	 :   !	&	(	*	+	++	-	--	character-constant	enumeration-constant	floating-constant	identifier	integer-constant	sizeof	string-constant	~	
+
+
+
+None Terminals :	Total count :	73
+	if-line	inclusive-OR-expression	unary-operator	declarator	identifier-list	struct-or-union-specifier	type-qualifier-list	type-specifier	abstract-declarator	cast-expression	else-part	expression-statement	pointer	unary-expression	external-declaration	function-definition	init-declarator	multiplicative-expression	storage-class-specifier	declaration	declaration-list	preprocessor-conditional	enum-specifier	equality-expression	logical-AND-expression	type-name	logical-OR-expression	parameter-declaration	struct-declarator	typedef-name	additive-expression	specifier-qualifier-list	struct-declaration-list	struct-or-union	STARTER	enumerator-list	initializer	labeled-statement	statement	type-qualifier	assignment-operator	elif-parts	else-line	initializer-list	struct-declarator-list	compound-statement	parameter-type-list	postfix-expression	primary-expression	direct-declarator	iteration-statement	struct-declaration	direct-abstract-declarator	expression	shift-expression	statement-list	constant	declaration-specifiers	enumerator	init-declarator-list	relational-expression	AND-expression	constant-expression	control-line	elif-line	jump-statement	parameter-list	selection-statement	translation-unit	argument-expression-list	assignment-expression	exclusive-OR-expression	conditional-expression
+
+Terminals :	Total count :	99
+	!	!=	"	#	%	%=	&	&&	&=	(	)	*	*=	+	++	+=	,	-	--	-=	->	.	...	/	/=	:	;	<	<<	<<=	<=	=	==	>	>=	>>	>>=	?	[	]	^	^=	auto	break	case	char	character-constant	const	continue	default	define	do	double	elif	else	endif	enum	enumeration-constant	error	extern	filename	float	floating-constant	for	goto	identifier	if	ifdef	ifndef	include	int	integer-constant	line	long	pragma	register	return	short	signed	sizeof	static	string-constant	struct	switch	text	token-sequence	typedef	undef	union	unsigned	void	volatile	while	{	|	|=	||	}	~

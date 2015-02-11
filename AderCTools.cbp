@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AderCTools" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/AderCTools" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/AderCTools" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c99" />
+		</Compiler>
+		<Unit filename="CTools.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="Config/Config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Config/Config.h" />
+		<Unit filename="Global/CTools.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Global/CTools.h" />
+		<Unit filename="Lexical/BinaryTuple.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lexical/BinaryTuple.h" />
+		<Unit filename="Lexical/Lexical.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lexical/Lexical.h" />
+		<Unit filename="Lexical/TokenKind.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lexical/TokenKind.h" />
+		<Unit filename="Parser/Grammar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Parser/Grammar.h" />
+		<Unit filename="Parser/Parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Parser/Parser.h" />
+		<Unit filename="Parser/StateStack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Parser/StateStack.h" />
+		<Unit filename="Parser/Syntax.h" />
+		<Unit filename="Parser/SyntaxKind.h" />
+		<Unit filename="Parser/SyntaxQueue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Parser/SyntaxStack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Parser/SyntaxTable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Parser/SyntaxTable.h" />
+		<Unit filename="Parser/SyntaxTree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Preprocessor/Preprocessor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Preprocessor/Preprocessor.h" />
+		<Unit filename="Prop/Prop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Prop/Prop.h" />
+		<Unit filename="Prop/PropFor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Prop/PropFor.h" />
+		<Unit filename="Prop/PropRed.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Prop/PropRed.h" />
+		<Unit filename="Prop/PropTable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Prop/PropTable.h" />
+		<Unit filename="Table/LiteralTable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Table/LiteralTable.h" />
+		<Unit filename="Table/SymbolTable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Table/SymbolTable.h" />
+		<Unit filename="Tools/Buffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Tools/Buffer.h" />
+		<Unit filename="Tools/CodeProp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Tools/CodeProp.h" />
+		<Unit filename="Tools/Errors.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Tools/Errors.h" />
+		<Unit filename="Tools/Files.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Tools/Files.h" />
+		<Unit filename="Tools/GenParsTable/GenParsTable.h" />
+		<Unit filename="Tools/GenParsTable/LALR.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Tools/GenParsTable/LR.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Tools/GenParsTable/SLR.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

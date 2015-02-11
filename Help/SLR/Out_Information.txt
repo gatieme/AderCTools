@@ -1,0 +1,78 @@
+begin to word analyze ````
+RetrivalCode finished !
+
+Word Analyze Succeed !
+Begin Loading C Grammar¡¤¡¤¡¤
+Total None Terminates : 4
+Total Right Productions :5
+Finished Loading C Grammar!
+
+
+FRIST Sets :
+R	 :   *	id	
+
+STARTER	 :   *	id	
+
+S	 :   *	id	
+
+L	 :   *	id	
+
+
+
+None Terminals :	Total count :	4
+	R	STARTER	S	L
+
+Terminals :	Total count :	3
+	*	=	id
+
+Totall LR(0) States is : 10
+
+state : 0		Size : 6
+STARTER -->  ¡ñ S  
+S -->  ¡ñ L  =  R  
+S -->  ¡ñ R  
+L -->  ¡ñ *  R  
+L -->  ¡ñ id  
+R -->  ¡ñ L  
+
+state : 1		Size : 1
+STARTER --> S   ¡ñ 
+
+state : 2		Size : 2
+S --> L   ¡ñ =  R  
+R --> L   ¡ñ 
+
+state : 3		Size : 1
+S --> R   ¡ñ 
+
+state : 4		Size : 4
+L --> *   ¡ñ R  
+R -->  ¡ñ L  
+L -->  ¡ñ *  R  
+L -->  ¡ñ id  
+
+state : 5		Size : 1
+L --> id   ¡ñ 
+
+state : 6		Size : 4
+S --> L  =   ¡ñ R  
+R -->  ¡ñ L  
+L -->  ¡ñ *  R  
+L -->  ¡ñ id  
+
+state : 7		Size : 1
+L --> *  R   ¡ñ 
+
+state : 8		Size : 1
+R --> L   ¡ñ 
+
+state : 9		Size : 1
+S --> L  =  R   ¡ñ 
+
+
+		Grammar Computer Succeeded !
+
+Begin Time : 	9:5:37
+End Time : 	9:5:38
+
+end 
