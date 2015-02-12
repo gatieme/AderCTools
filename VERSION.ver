@@ -876,4 +876,18 @@ AderCTools
     int main()
     {
 	scanf("%d", &a);
-    }		
+    }
+    
+#[代码修改信息]0.8.0 2014-02-12 19:44
+    ①修复了do while循环下插桩信息不正确的BUG
+    BUG修复过程
+    // 按照第139个产生式归约时的插桩动作
+    // iteration-statement -=> do statement while ( expression ) ;
+    // EG do i++ while(i < 10);
+    // AS do i++ while(LINE(STREAM), i < 10);
+    void PropReduction139(PropTable propTable, SyntaxTree parentRoot)
+    代码中
+    // 在(运算符的后面插入数据LINE(stream),
+    long offset = tupleNode>m_tuple.m_coord.m_fileEndOffset;
+    修改为
+    long offset = terinalNode->m_tuple.m_coord.m_fileEndOffset;

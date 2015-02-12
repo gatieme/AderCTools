@@ -1,144 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Release" />
-	<File name="Parser\Syntax.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1633" topLine="45" />
-		</Cursor>
-	</File>
-	<File name="Parser\SyntaxKind.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="975" topLine="72" />
-		</Cursor>
-	</File>
-	<File name="Parser\SyntaxQueue.c" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="801" topLine="23" />
-		</Cursor>
-	</File>
-	<File name="Parser\SyntaxStack.c" open="1" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4900" topLine="132" />
-		</Cursor>
-	</File>
-	<File name="Parser\SyntaxTable.c" open="1" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1180492" topLine="11171" />
-		</Cursor>
-	</File>
-	<File name="Parser\SyntaxTable.h" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2486" topLine="58" />
-		</Cursor>
-	</File>
-	<File name="Parser\SyntaxTree.c" open="1" top="1" tabpos="13" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="14072" topLine="323" />
-		</Cursor>
-	</File>
-	<File name="Tools\CodeProp.c" open="1" top="0" tabpos="44" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="755" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Preprocessor\Preprocessor.c" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2775" topLine="57" />
-		</Cursor>
-	</File>
-	<File name="Tools\CodeProp.h" open="1" top="0" tabpos="43" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1192" topLine="2" />
-		</Cursor>
-	</File>
-	<File name="Preprocessor\Preprocessor.h" open="1" top="0" tabpos="49" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1278" topLine="18" />
-		</Cursor>
-	</File>
-	<File name="Tools\Errors.c" open="1" top="0" tabpos="34" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3295" topLine="97" />
-		</Cursor>
-	</File>
-	<File name="Prop\Prop.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="15043" topLine="430" />
-		</Cursor>
-	</File>
-	<File name="Tools\Errors.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4820" topLine="119" />
-		</Cursor>
-	</File>
-	<File name="Prop\Prop.h" open="1" top="0" tabpos="30" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3716" topLine="7" />
-		</Cursor>
-	</File>
-	<File name="Tools\Files.c" open="1" top="0" tabpos="35" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="811" topLine="9" />
-		</Cursor>
-	</File>
-	<File name="CTools.rc" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="28" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Prop\PropFor.c" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="42" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Tools\Files.h" open="1" top="0" tabpos="31" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1863" topLine="43" />
-		</Cursor>
-	</File>
-	<File name="Config\Config.c" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1536" topLine="51" />
-		</Cursor>
-	</File>
 	<File name="Prop\PropFor.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="664" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Tools\GenParsTable\GenParsTable.h" open="1" top="0" tabpos="37" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1287" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="Config\Config.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="13969" topLine="274" />
+			<Cursor1 position="14190" topLine="290" />
 		</Cursor>
 	</File>
-	<File name="Prop\PropRed.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+	<File name="Prop\PropRed.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="27441" topLine="12" />
-		</Cursor>
-	</File>
-	<File name="Tools\GenParsTable\LALR.c" open="1" top="0" tabpos="38" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="995" topLine="0" />
+			<Cursor1 position="44731" topLine="1816" />
 		</Cursor>
 	</File>
 	<File name="Global\CTools.c" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1503" topLine="14" />
+			<Cursor1 position="1089" topLine="19" />
 		</Cursor>
 	</File>
 	<File name="Prop\PropRed.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="55104" topLine="1521" />
-		</Cursor>
-	</File>
-	<File name="Tools\GenParsTable\LR.c" open="1" top="0" tabpos="39" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="993" topLine="0" />
+			<Cursor1 position="42370" topLine="902" />
 		</Cursor>
 	</File>
 	<File name="Global\CTools.h" open="1" top="0" tabpos="45" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
@@ -151,14 +36,9 @@
 			<Cursor1 position="7268" topLine="198" />
 		</Cursor>
 	</File>
-	<File name="Tools\GenParsTable\SLR.c" open="1" top="0" tabpos="40" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="994" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="Lexical\BinaryTuple.c" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2531" topLine="80" />
+			<Cursor1 position="25671" topLine="670" />
 		</Cursor>
 	</File>
 	<File name="Prop\PropTable.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
@@ -168,7 +48,7 @@
 	</File>
 	<File name="Lexical\BinaryTuple.h" open="1" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4954" topLine="103" />
+			<Cursor1 position="5108" topLine="136" />
 		</Cursor>
 	</File>
 	<File name="Table\LiteralTable.c" open="1" top="0" tabpos="42" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
@@ -178,7 +58,7 @@
 	</File>
 	<File name="Lexical\Lexical.c" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="9850" topLine="238" />
+			<Cursor1 position="46383" topLine="1074" />
 		</Cursor>
 	</File>
 	<File name="Table\LiteralTable.h" open="0" top="0" tabpos="35" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -188,7 +68,7 @@
 	</File>
 	<File name="Lexical\Lexical.h" open="1" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3511" topLine="95" />
+			<Cursor1 position="3519" topLine="25" />
 		</Cursor>
 	</File>
 	<File name="Table\SymbolTable.c" open="1" top="0" tabpos="41" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -198,7 +78,7 @@
 	</File>
 	<File name="Lexical\TokenKind.c" open="1" top="0" tabpos="47" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3722" topLine="108" />
+			<Cursor1 position="5749" topLine="330" />
 		</Cursor>
 	</File>
 	<File name="Table\SymbolTable.h" open="1" top="0" tabpos="48" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -208,22 +88,22 @@
 	</File>
 	<File name="Lexical\TokenKind.h" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7236" topLine="127" />
+			<Cursor1 position="8675" topLine="151" />
 		</Cursor>
 	</File>
 	<File name="Tools\Buffer.c" open="1" top="0" tabpos="33" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="9747" topLine="179" />
+			<Cursor1 position="9368" topLine="179" />
 		</Cursor>
 	</File>
 	<File name="Parser\Grammar.c" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="13141" topLine="4085" />
+			<Cursor1 position="13141" topLine="4083" />
 		</Cursor>
 	</File>
 	<File name="Tools\Buffer.h" open="1" top="0" tabpos="32" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1488" topLine="33" />
+			<Cursor1 position="2695" topLine="63" />
 		</Cursor>
 	</File>
 	<File name="Parser\Grammar.h" open="1" top="0" tabpos="36" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
@@ -233,22 +113,142 @@
 	</File>
 	<File name="Parser\Parser.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2845" topLine="55" />
+			<Cursor1 position="22642" topLine="467" />
 		</Cursor>
 	</File>
 	<File name="Parser\Parser.h" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1837" topLine="49" />
+			<Cursor1 position="2027" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Parser\StateStack.c" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4274" topLine="125" />
+			<Cursor1 position="4318" topLine="125" />
+		</Cursor>
+	</File>
+	<File name="Tools\CodeProp.c" open="1" top="0" tabpos="44" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="763" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Parser\StateStack.h" open="1" top="0" tabpos="46" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1046" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="Tools\CodeProp.h" open="1" top="0" tabpos="43" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1171" topLine="14" />
+		</Cursor>
+	</File>
+	<File name="Parser\Syntax.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1633" topLine="45" />
+		</Cursor>
+	</File>
+	<File name="Tools\Errors.c" open="1" top="0" tabpos="34" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3259" topLine="91" />
+		</Cursor>
+	</File>
+	<File name="Parser\SyntaxKind.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="975" topLine="72" />
+		</Cursor>
+	</File>
+	<File name="Tools\Errors.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1617" topLine="125" />
+		</Cursor>
+	</File>
+	<File name="Parser\SyntaxQueue.c" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="801" topLine="23" />
+		</Cursor>
+	</File>
+	<File name="Tools\Files.c" open="1" top="0" tabpos="35" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="967" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Parser\SyntaxStack.c" open="1" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4900" topLine="132" />
+		</Cursor>
+	</File>
+	<File name="Tools\Files.h" open="1" top="0" tabpos="31" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2061" topLine="103" />
+		</Cursor>
+	</File>
+	<File name="Parser\SyntaxTable.c" open="1" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1762703" topLine="16590" />
+		</Cursor>
+	</File>
+	<File name="Tools\GenParsTable\GenParsTable.h" open="1" top="0" tabpos="37" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1287" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Parser\SyntaxTable.h" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2486" topLine="58" />
+		</Cursor>
+	</File>
+	<File name="Tools\GenParsTable\LALR.c" open="1" top="0" tabpos="38" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="995" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Parser\SyntaxTree.c" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="20719" topLine="539" />
+		</Cursor>
+	</File>
+	<File name="Tools\GenParsTable\LR.c" open="1" top="0" tabpos="39" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="993" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Preprocessor\Preprocessor.c" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2775" topLine="57" />
+		</Cursor>
+	</File>
+	<File name="Tools\GenParsTable\SLR.c" open="1" top="0" tabpos="40" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="994" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Preprocessor\Preprocessor.h" open="1" top="0" tabpos="49" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1278" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="Prop\Prop.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="15586" topLine="429" />
+		</Cursor>
+	</File>
+	<File name="Prop\Prop.h" open="1" top="0" tabpos="30" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3716" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="CTools.rc" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="28" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Prop\PropFor.c" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="42" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Config\Config.c" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1052" topLine="9" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

@@ -1826,10 +1826,14 @@ void PropReduction139(PropTable propTable, SyntaxTree parentRoot)
     //      找到的第一个"("就是所需要找到的那个"("符号
     if((tupleNode = FindFirstSyntaxTreeTreinal(parentRoot, WHILE_KEYWORD)) != NULL)      // 先找到while关键字
     {
+        //printf("找到了while关键字\n");
+        //ShowCoord(&(tupleNode->m_tuple.m_coord));
+        //  找到第一个词法结点的位置
         if((terinalNode = FindFirstTupleTreinal(tupleNode, LPAREN_OPERATE)) != NULL)
         {
             // 在(运算符的后面插入数据LINE(stream),
-            long offset = tupleNode->m_tuple.m_coord.m_fileEndOffset;
+            long offset = terinalNode->m_tuple.m_coord.m_fileEndOffset;
+            //ShowCoord(&(terinalNode->m_tuple.m_coord));
             InsertPropData(propTable, offset, PROP_COMMA_PROP_KIND);
         }
 

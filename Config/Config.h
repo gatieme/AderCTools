@@ -278,9 +278,9 @@ PUBLIC int CToolsPrintf(const char *format, ...);                       // 定义C
 #
 // 语法分析器调试信息宏/////////////////////////////
 #
-#define PARSER_DEBUG_DEFINE            /// Parser调试信息宏
+//#define PARSER_DEBUG_DEFINE            /// Parser调试信息宏
 #
-#define PARSER_SHOWS_DEFINE            /// Parser输出信息宏
+//#define PARSER_SHOWS_DEFINE            /// Parser输出信息宏
 #
 //#define PARSER_HELPS_DEFINE            /// Parser帮助信息宏
 ///////////////////////////////////////////////////
