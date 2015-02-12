@@ -438,17 +438,19 @@ int MainOfProp(int argc, char **argv)
         printf("ErrorPROP: too many file...\n");
         exit(-1);
     }
+    else// argc == 2或者3
+    {
+        strcpy(propSrcFname, argv[1]);           // 取出输入文件
+        if(argc == 2)
+        {
+            strcpy(propDestFname, PROP_FILE_NAME);
+        }
+        else if(argc == 3)
+        {
+            strcpy(propDestFname, argv[2]);
+        }
+    }
 
-    // 获取输入输出文件
-    strcpy(propSrcFname, argv[1]);           // 取出输入文件
-    if(argc == 2)
-    {
-        strcpy(propDestFname, PROP_FILE_NAME);
-    }
-    else if(argc == 3)
-    {
-        strcpy(propDestFname, argv[2]);
-    }
 
     // 语法分析的同时对源文件进行插桩分析...
     PropFile(propDestFname, propSrcFname);

@@ -1,4 +1,5 @@
 int main( )
 {
-	printf("%d\n", 10);
+	int a;
+	printf("%p\n", &a);
 }

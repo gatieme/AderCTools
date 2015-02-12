@@ -1,0 +1,11 @@
+#  过滤数据库文件、sln解决方案文件、配置文件  
+*.mdb  
+*.ldb  
+*.sln  
+*.config  
+
+  
+  
+#目标文件目录/obj和/bin  
+bin/  
+obj/  

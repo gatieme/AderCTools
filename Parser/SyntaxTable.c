@@ -15190,7 +15190,10 @@ ActionNode action1[] =
     {    MUL_OPERATE,                   MOVING,                SYN_NULL,   2,    },    // 1	*		0	2
     {    IDENTIFIER,                    MOVING,                SYN_NULL,  46,    },    // 1	identifier		0	46
     {    RPAREN_OPERATE,                 MOVING,               SYN_NULL,  292,   },
+
+//    {    STRING_CONST,                  MOVING,                SYN_NULL,  46,    },    // 1	identifier		0	46
     {    TOKEN_NULL,               ACTION_NULL,                SYN_NULL,  -1,    },    // the 129's action end
+
 };
 
 ActionNode action129[] =

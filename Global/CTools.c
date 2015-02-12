@@ -33,14 +33,14 @@ int main(int argc, char **argv)
     // printf("%s\n", LineDefineStr);
     // printf("%s\n", FileOpenDefineStr);
     // printf("%s\n", StartDefineStr);
-    //freopen("out.txt", "w", stdout);
+	freopen("out-bug.txt", "w", stdout);
 
-    #ifdef PROP_REDUCTION_DEFINE
-    MainOfProp(argc, argv);
-    #endif  // PROP_REDUCTION_DEFINE
+//    #ifdef PROP_REDUCTION_DEFINE
+//    MainOfProp(argc, argv);
+//    #endif  // PROP_REDUCTION_DEFINE
 
     #ifndef PROP_REDUCTION_DEFINE
-    ParseFilePropRed("out_prop.c", "Test\\Source\\bug11.c");
+    ParseFilePropRed("out_prop.c", ".\\TEST\\Bug\\bug8-1.c");
     #endif  // PROP_REDUCTION_DEFINE
 
     PAUSE( );

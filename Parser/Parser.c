@@ -481,13 +481,14 @@ SyntaxTree ParseFilePropRed(const char *destFname, const char *sourFname)       
 
     BinaryTuple douTuple = NULL;               // 二元组信息
 
+    /// 对源文件sourFname词法处理
     douTuple = BufferLexical(sourFname);      // 直接处理源文件
-
 
     #ifdef PARSER_SHOWS_DEFINE
     VisitTuple(douTuple);            // 遍历二元组信息, 查找二元组正确性
     #endif // PARSER_SHOWS_DEFINE
 
+    /// 对源文件进行语法分析，并将插桩信息写入destFname
     syntaxRoot = ParseTuplePropRed(douTuple, destFname);
 
 
@@ -506,6 +507,8 @@ bool TestOfParse( )
 {
     return ParseFile("TEST/test0.c");
 }
+
+
 
 
 

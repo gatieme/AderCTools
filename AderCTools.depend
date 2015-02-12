@@ -5542,3 +5542,195 @@
 
 1378820434 source:k:\c-c++\aderctools[0.7.81]\aderctools[0.7.8]\tools\genparstable\slr.c
 
+1382753836 source:k:\aderstep\aderctools\config\config.c
+	"..\Config\Config.h"
+
+1423734002 k:\aderstep\aderctools\config\config.h
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<assert.h>
+	<limits.h>
+	<errno.h>
+	<string.h>
+	<ctype.h>
+	<stdbool.h>
+	<malloc.h>
+	<time.h>
+
+1373351634 source:k:\aderstep\aderctools\ctools.rc
+
+1423735395 source:k:\aderstep\aderctools\global\ctools.c
+	"..\Global\CTools.h"
+
+1383649716 k:\aderstep\aderctools\global\ctools.h
+	"..\Config\Config.h"
+	"..\Tools\Errors.h"
+	"..\Tools\Files.h"
+	"..\Tools\Buffer.h"
+	"..\Lexical\Lexical.h"
+	"..\Parser\Parser.h"
+	"..\Table\SymbolTable.h"
+	"..\Prop\Prop.h"
+
+1385691016 k:\aderstep\aderctools\tools\errors.h
+
+1385299592 k:\aderstep\aderctools\tools\files.h
+	"..\Config\Config.h"
+
+1385903446 k:\aderstep\aderctools\tools\buffer.h
+	"..\Tools\Files.h"
+	"..\Tools\Errors.h"
+
+1385348502 k:\aderstep\aderctools\lexical\lexical.h
+	"..\Config\Config.h"
+	"..\Tools\Files.h"
+	"..\Tools\Buffer.h"
+	"..\Lexical\TokenKind.h"
+	"..\Lexical\BinaryTuple.h"
+
+1385464220 k:\aderstep\aderctools\lexical\tokenkind.h
+	"..\Config\Config.h"
+
+1385212888 k:\aderstep\aderctools\lexical\binarytuple.h
+	"..\Config\Config.h"
+	"..\Lexical\TokenKind.h"
+	"..\Tools\Files.h"
+	"..\Tools\Errors.h"
+
+1385177344 k:\aderstep\aderctools\parser\parser.h
+	"..\Parser\Syntax.h"
+	"..\Prop\Prop.h"
+	"..\Prop\PropRed.h"
+	"..\Prop\PropTable.h"
+
+1385012430 k:\aderstep\aderctools\parser\syntax.h
+	"..\Config\Config.h"
+	"..\Lexical\Lexical.h"
+	"..\Lexical\BinaryTuple.h"
+	"..\Parser\StateStack.h"
+	"..\Parser\SyntaxTable.h"
+	"..\Parser\Grammar.h"
+
+1384388096 k:\aderstep\aderctools\parser\statestack.h
+	"..\Config\Config.h"
+
+1385347584 k:\aderstep\aderctools\parser\syntaxtable.h
+	"..\Config\Config.h"
+	"..\Lexical\TokenKind.h"
+	"..\Parser\SyntaxKind.h"
+	"..\Lexical\BinaryTuple.h"
+
+1385512572 k:\aderstep\aderctools\parser\syntaxkind.h
+	"..\Config\Config.h"
+
+1376797520 k:\aderstep\aderctools\parser\grammar.h
+	"..\Config\Config.h"
+	"..\Lexical\TokenKind.h"
+	"..\Parser\SyntaxKind.h"
+
+1394096610 k:\aderstep\aderctools\prop\prop.h
+	"../Parser/Syntax.h"
+	"../Tools/Files.h"
+	"../Config/Config.h"
+	"../Lexical/BinaryTuple.h"
+	"../Lexical/Lexical.h"
+
+1385606462 k:\aderstep\aderctools\prop\propred.h
+	"../Prop/Prop.h"
+	"PropTable.h"
+
+1394097114 k:\aderstep\aderctools\prop\proptable.h
+	"../Config/Config.h"
+	"Prop.h"
+
+1378128498 k:\aderstep\aderctools\table\symboltable.h
+	"..\Lexical\TokenKind.h"
+
+1385691040 source:k:\aderstep\aderctools\lexical\binarytuple.c
+	"BinaryTuple.h"
+
+1423727262 source:k:\aderstep\aderctools\lexical\lexical.c
+	"..\Lexical\Lexical.h"
+
+1387774894 source:k:\aderstep\aderctools\lexical\tokenkind.c
+	"Lexical.h"
+
+1385464258 source:k:\aderstep\aderctools\parser\grammar.c
+	"..\Config\Config.h"
+	"..\Parser\Grammar.h"
+
+1423734354 source:k:\aderstep\aderctools\parser\parser.c
+	"..\Parser\Parser.h"
+
+1385011508 source:k:\aderstep\aderctools\parser\statestack.c
+	"..\Parser\StateStack.h"
+
+1385349464 source:k:\aderstep\aderctools\parser\syntaxqueue.c
+	"Syntax.h"
+
+1384133370 source:k:\aderstep\aderctools\parser\syntaxstack.c
+	"..\Parser\Syntax.h"
+
+1423735376 source:k:\aderstep\aderctools\parser\syntaxtable.c
+	"..\Parser\SyntaxTable.h"
+	"..\Lexical\TokenKind.h"
+	"..\Parser\SyntaxKind.h"
+
+1385349464 source:k:\aderstep\aderctools\parser\syntaxtree.c
+	"..\Parser\Syntax.h"
+
+1385341630 source:k:\aderstep\aderctools\preprocessor\preprocessor.c
+	"..\Preprocessor\Preprocessor.h"
+	"..\Tools\Errors.h"
+	"..\Tools\Buffer.h"
+
+1373113842 k:\aderstep\aderctools\preprocessor\preprocessor.h
+	"..\Tools\Buffer.h"
+
+1423732262 source:k:\aderstep\aderctools\prop\prop.c
+	"Prop.h"
+
+1384241344 source:k:\aderstep\aderctools\prop\propfor.c
+	"../Prop/PropFor.h"
+
+1384237362 k:\aderstep\aderctools\prop\propfor.h
+	"../Prop/Prop.h"
+
+1394097434 source:k:\aderstep\aderctools\prop\propred.c
+	"PropRed.h"
+
+1394097090 source:k:\aderstep\aderctools\prop\proptable.c
+	"PropTable.h"
+
+1380086822 source:k:\aderstep\aderctools\table\literaltable.c
+	"LiteralTable.h"
+
+1380086940 k:\aderstep\aderctools\table\literaltable.h
+	"..\Lexical\TokenKind.h"
+
+1384233256 source:k:\aderstep\aderctools\table\symboltable.c
+	"SymbolTable.h"
+
+1385951982 source:k:\aderstep\aderctools\tools\buffer.c
+	"Buffer.h"
+
+1378724540 source:k:\aderstep\aderctools\tools\codeprop.c
+
+1385691082 source:k:\aderstep\aderctools\tools\errors.c
+	"..\Tools\Errors.h"
+	"..\Global\CTools.h"
+
+1380086686 source:k:\aderstep\aderctools\tools\files.c
+	"Files.h"
+
+1378892584 source:k:\aderstep\aderctools\tools\genparstable\lalr.c
+	"GenParsTable.h"
+
+1378898794 k:\aderstep\aderctools\tools\genparstable\genparstable.h
+	"..\..\Parser\Grammar.h"
+
+1378820422 source:k:\aderstep\aderctools\tools\genparstable\lr.c
+
+1378820434 source:k:\aderstep\aderctools\tools\genparstable\slr.c
+
