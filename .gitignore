@@ -7,5 +7,5 @@
   
   
 #目标文件目录/obj和/bin  
-bin/  
-obj/  
+/bin/  
+/obj/  
