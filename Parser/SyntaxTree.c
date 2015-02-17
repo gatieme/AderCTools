@@ -20,7 +20,7 @@
 
 
 
-#include "..\Parser\Syntax.h"               // 语法树结点信息
+#include "Syntax.h"               // 语法树结点信息
 
 
 /*

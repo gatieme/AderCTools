@@ -4,7 +4,7 @@
 #ifndef TOKEN_KIND_H_INCLUDED
 #define TOKEN_KIND_H_INCLUDED
 
-#include "..\Config\Config.h"         // 配置文件信息
+#include "Config.h"     //  #include "..\Config\Config.h"         // 配置文件信息
 
 /// 宏定义函数的定义方式信息
 #ifndef PUBLIC_and_PUBLIC

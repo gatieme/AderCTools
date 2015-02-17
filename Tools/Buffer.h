@@ -17,8 +17,8 @@
 #define BUFFER_H_INCLUDED
 
 
-#include "..\Tools\Files.h"          // 文件信息函数
-#include "..\Tools\Errors.h"
+#include "Files.h"          // 文件信息函数
+#include "Errors.h"
 
 
 /// 宏定义函数的定义方式信息

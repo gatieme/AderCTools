@@ -85,11 +85,11 @@
 
 
 
-#include "..\Parser\SyntaxTable.h"
+#include "SyntaxTable.h"    //  #include "..\Parser\SyntaxTable.h"
 
 
-#include "..\Lexical\TokenKind.h"
-#include "..\Parser\SyntaxKind.h"
+#include "TokenKind.h"    //  #include "..\Lexical\TokenKind.h"
+#include "SyntaxKind.h"    //  #include "SyntaxKind.h"    //  #include "..\Parser\SyntaxKind.h"
 
 
 

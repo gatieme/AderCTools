@@ -21,13 +21,13 @@
 
 
 
-#include "..\Parser\Syntax.h"
+#include "Syntax.h"
 
 
 //#ifdef PROP_REDUCTION_DEFINE
-#include "..\Prop\Prop.h"
-#include "..\Prop\PropRed.h"
-#include "..\Prop\PropTable.h"
+#include "Prop.h"
+#include "PropRed.h"
+#include "PropTable.h"
 //#endif // PROP_REDUCTION_DEFINE
 
 

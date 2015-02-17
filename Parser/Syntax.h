@@ -2,16 +2,16 @@
 #define SYNTAX_H_INCLUDED
 
 
-#include "..\Config\Config.h"
+#include "Config.h"         //  #include "..\Config\Config.h"
 
-#include "..\Lexical\Lexical.h"
+#include "Lexical.h"        //  #include "..\Lexical\Lexical.h"
 
-#include "..\Lexical\BinaryTuple.h"            // 词法二元组
+#include "BinaryTuple.h"    //  #include "..\Lexical\BinaryTuple.h"            // 词法二元组
 
-#include "..\Parser\StateStack.h"
+#include "StateStack.h"     //  #include "..\Parser\StateStack.h"
 
-#include "..\Parser\SyntaxTable.h"
-#include "..\Parser\Grammar.h"
+#include "SyntaxTable.h"    //  #include "..\Parser\SyntaxTable.h"
+#include "Grammar.h"        //  #include "..\Parser\Grammar.h"
 
 
 

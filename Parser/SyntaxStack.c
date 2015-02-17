@@ -12,7 +12,7 @@
 
 
 
-#include "..\Parser\Syntax.h"
+#include "Syntax.h"
 
 
 

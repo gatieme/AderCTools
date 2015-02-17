@@ -65,12 +65,12 @@
 #define LEXICAL_H_INCLUDED
 
 
-#include "..\Config\Config.h"
+#include "Config.h"     //  #include "..\Config\Config.h"
 
-#include "..\Tools\Files.h"             // 文件处理接口
-#include "..\Tools\Buffer.h"            // 双缓冲区接口
-#include "..\Lexical\TokenKind.h"       // 关键字种类标识
-#include "..\Lexical\BinaryTuple.h"     // 词法二元组信息
+#include "Files.h"             // 文件处理接口
+#include "Buffer.h"            // 双缓冲区接口
+#include "TokenKind.h"    //  #include "..\Lexical\TokenKind.h"       // 关键字种类标识
+#include "BinaryTuple.h"   //  #include "..\Lexical\BinaryTuple.h"     // 词法二元组信息
 
 
 /// 宏定义函数的定义方式信息

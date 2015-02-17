@@ -1,10 +1,10 @@
 #ifndef GRAMMAR_H_INCLUDED
 #define GRAMMAR_H_INCLUDED
 
-#include "..\Config\Config.h"
+#include "Config.h"     //  #include "..\Config\Config.h"
 
-#include "..\Lexical\TokenKind.h"
-#include "..\Parser\SyntaxKind.h"
+#include "TokenKind.h"    //  #include "..\Lexical\TokenKind.h"
+#include "SyntaxKind.h"    //  #include "SyntaxKind.h"    //  #include "..\Parser\SyntaxKind.h"
 
 
 

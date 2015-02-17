@@ -63,7 +63,7 @@
 #define SYMBOLTABLE_H_INCLUDED
 
 
-#include "..\Lexical\TokenKind.h"
+#include "TokenKind.h"    //  #include "..\Lexical\TokenKind.h"
 
 
 

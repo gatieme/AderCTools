@@ -4,7 +4,7 @@
 
 
 
-#include "..\Config\Config.h"
+#include "Config.h"     //  #include "..\Config\Config.h"
 
 
 /// 语法[文法]结点的种别码

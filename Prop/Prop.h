@@ -14,11 +14,11 @@
 #define PROP_H_INCLUDED
 
 
-#include "../Parser/Syntax.h"
-#include "../Tools/Files.h"
-#include "../Config/Config.h"
-#include "../Lexical/BinaryTuple.h"
-#include "../Lexical/Lexical.h"
+#include "Syntax.h"
+#include "Files.h"
+#include "Config.h"
+#include "BinaryTuple.h"
+#include "Lexical.h"
 
 
 

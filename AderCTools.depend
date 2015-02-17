@@ -5542,8 +5542,8 @@
 
 1378820434 source:k:\c-c++\aderctools[0.7.81]\aderctools[0.7.8]\tools\genparstable\slr.c
 
-1382753836 source:k:\aderstep\aderctools\config\config.c
-	"..\Config\Config.h"
+1424004188 source:k:\aderstep\aderctools\config\config.c
+	"Config.h"
 
 1423740280 k:\aderstep\aderctools\config\config.h
 	<stdio.h>
@@ -5575,28 +5575,28 @@
 
 1385691016 k:\aderstep\aderctools\tools\errors.h
 
-1385299592 k:\aderstep\aderctools\tools\files.h
-	"..\Config\Config.h"
+1424004188 k:\aderstep\aderctools\tools\files.h
+	"Config.h"
 
-1385903446 k:\aderstep\aderctools\tools\buffer.h
-	"..\Tools\Files.h"
-	"..\Tools\Errors.h"
+1424137035 k:\aderstep\aderctools\tools\buffer.h
+	"Files.h"
+	"Errors.h"
 
-1385348502 k:\aderstep\aderctools\lexical\lexical.h
-	"..\Config\Config.h"
-	"..\Tools\Files.h"
-	"..\Tools\Buffer.h"
-	"..\Lexical\TokenKind.h"
-	"..\Lexical\BinaryTuple.h"
+1424137035 k:\aderstep\aderctools\lexical\lexical.h
+	"Config.h"
+	"Files.h"
+	"Buffer.h"
+	"TokenKind.h"
+	"BinaryTuple.h"
 
-1385464220 k:\aderstep\aderctools\lexical\tokenkind.h
-	"..\Config\Config.h"
+1424004188 k:\aderstep\aderctools\lexical\tokenkind.h
+	"Config.h"
 
-1385212888 k:\aderstep\aderctools\lexical\binarytuple.h
-	"..\Config\Config.h"
-	"..\Lexical\TokenKind.h"
-	"..\Tools\Files.h"
-	"..\Tools\Errors.h"
+1424136705 k:\aderstep\aderctools\lexical\binarytuple.h
+	"Config.h"
+	"TokenKind.h"
+	"Files.h"
+	"Errors.h"
 
 1385177344 k:\aderstep\aderctools\parser\parser.h
 	"..\Parser\Syntax.h"
@@ -5604,48 +5604,48 @@
 	"..\Prop\PropRed.h"
 	"..\Prop\PropTable.h"
 
-1385012430 k:\aderstep\aderctools\parser\syntax.h
-	"..\Config\Config.h"
-	"..\Lexical\Lexical.h"
-	"..\Lexical\BinaryTuple.h"
-	"..\Parser\StateStack.h"
-	"..\Parser\SyntaxTable.h"
-	"..\Parser\Grammar.h"
+1424003783 k:\aderstep\aderctools\parser\syntax.h
+	"Config.h"
+	"Lexical.h"
+	"BinaryTuple.h"
+	"StateStack.h"
+	"SyntaxTable.h"
+	"Grammar.h"
 
-1384388096 k:\aderstep\aderctools\parser\statestack.h
-	"..\Config\Config.h"
+1424004187 k:\aderstep\aderctools\parser\statestack.h
+	"Config.h"
 
-1385347584 k:\aderstep\aderctools\parser\syntaxtable.h
-	"..\Config\Config.h"
-	"..\Lexical\TokenKind.h"
-	"..\Parser\SyntaxKind.h"
-	"..\Lexical\BinaryTuple.h"
+1424004188 k:\aderstep\aderctools\parser\syntaxtable.h
+	"Config.h"
+	"TokenKind.h"
+	"SyntaxKind.h"
+	"BinaryTuple.h"
 
-1385512572 k:\aderstep\aderctools\parser\syntaxkind.h
-	"..\Config\Config.h"
+1424004187 k:\aderstep\aderctools\parser\syntaxkind.h
+	"Config.h"
 
-1376797520 k:\aderstep\aderctools\parser\grammar.h
-	"..\Config\Config.h"
-	"..\Lexical\TokenKind.h"
-	"..\Parser\SyntaxKind.h"
+1424004188 k:\aderstep\aderctools\parser\grammar.h
+	"Config.h"
+	"TokenKind.h"
+	"SyntaxKind.h"
 
-1394096610 k:\aderstep\aderctools\prop\prop.h
-	"../Parser/Syntax.h"
-	"../Tools/Files.h"
-	"../Config/Config.h"
-	"../Lexical/BinaryTuple.h"
-	"../Lexical/Lexical.h"
+1424137035 k:\aderstep\aderctools\prop\prop.h
+	"Syntax.h"
+	"Files.h"
+	"Config.h"
+	"BinaryTuple.h"
+	"Lexical.h"
 
-1385606462 k:\aderstep\aderctools\prop\propred.h
-	"../Prop/Prop.h"
+1424137035 k:\aderstep\aderctools\prop\propred.h
+	"Prop.h"
 	"PropTable.h"
 
-1394097114 k:\aderstep\aderctools\prop\proptable.h
-	"../Config/Config.h"
+1424137035 k:\aderstep\aderctools\prop\proptable.h
+	"Config.h"
 	"Prop.h"
 
-1378128498 k:\aderstep\aderctools\table\symboltable.h
-	"..\Lexical\TokenKind.h"
+1424004188 k:\aderstep\aderctools\table\symboltable.h
+	"TokenKind.h"
 
 1385691040 source:k:\aderstep\aderctools\lexical\binarytuple.c
 	"BinaryTuple.h"
@@ -5697,7 +5697,7 @@
 1384237362 k:\aderstep\aderctools\prop\propfor.h
 	"../Prop/Prop.h"
 
-1423740168 source:k:\aderstep\aderctools\prop\propred.c
+1423741001 source:k:\aderstep\aderctools\prop\propred.c
 	"PropRed.h"
 
 1394097090 source:k:\aderstep\aderctools\prop\proptable.c
@@ -5706,8 +5706,8 @@
 1380086822 source:k:\aderstep\aderctools\table\literaltable.c
 	"LiteralTable.h"
 
-1380086940 k:\aderstep\aderctools\table\literaltable.h
-	"..\Lexical\TokenKind.h"
+1424137035 k:\aderstep\aderctools\table\literaltable.h
+	"TokenKind.h"
 
 1384233256 source:k:\aderstep\aderctools\table\symboltable.c
 	"SymbolTable.h"

@@ -19,11 +19,11 @@
 #define SYNTAXTABLE_H_INCLUDED
 
 
-#include "..\Config\Config.h"
+#include "Config.h"     //  #include "..\Config\Config.h"
 
-#include "..\Lexical\TokenKind.h"
-#include "..\Parser\SyntaxKind.h"
-#include "..\Lexical\BinaryTuple.h"
+#include "TokenKind.h"    //  #include "..\Lexical\TokenKind.h"
+#include "SyntaxKind.h"    //  #include "..\Parser\SyntaxKind.h"
+#include "BinaryTuple.h"   //  #include "..\Lexical\BinaryTuple.h"
 /// 宏定义函数的定义方式信息
 #ifndef PUBLIC_and_PRIVATE
 #define PUBLIC_and_PRIVATE

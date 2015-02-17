@@ -11,7 +11,7 @@
 **/
 
 
-#include "..\Lexical\Lexical.h"
+#include "Lexical.h"    //  #include "..\Lexical\Lexical.h"
 
 
 

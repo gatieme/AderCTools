@@ -1,7 +1,7 @@
 
 
 
-#include "..\Config\Config.h"
+#include "Config.h"     //  #include "..\Config\Config.h"
 
 int CToolsPrintf(const char* format, ...)
 {

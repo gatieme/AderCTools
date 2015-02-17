@@ -11,7 +11,7 @@
 #ifndef PROPTABLE_H_INCLUDED
 #define PROPTABLE_H_INCLUDED
 
-#include "../Config/Config.h"
+#include "Config.h"
 #include "Prop.h"
 
 

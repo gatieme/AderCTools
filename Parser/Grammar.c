@@ -1,5 +1,5 @@
-#include "..\Config\Config.h"
-#include "..\Parser\Grammar.h"
+#include "Config.h"     //  #include "..\Config\Config.h"
+#include "Grammar.h"    //  #include "..\Parser\Grammar.h"
 
 
 

@@ -12,7 +12,7 @@
 #define REDPROP_H_INCLUDED
 
 
-#include "../Prop/Prop.h"
+#include "Prop.h"
 #include "PropTable.h"
 
 

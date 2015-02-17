@@ -24,7 +24,7 @@
 
 
 
-#include "..\Config\Config.h"
+#include "Config.h"     //  #include "..\Config\Config.h"
 
 
 /// 宏定义函数的定义方式信息

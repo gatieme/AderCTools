@@ -7,28 +7,28 @@
 
 
 /// 配置文件信息
-#include "..\Config\Config.h"                // 配置工具
+#include "Config.h"     //  #include "..\Config\Config.h"                // 配置工具
 
 
 /// 全局接口
-#include "..\Tools\Errors.h"               // 错误处理接口
-#include "..\Tools\Files.h"                 // 文件处理接口
+#include "Errors.h"               // 错误处理接口
+#include "Files.h"                 // 文件处理接口
 
 /// 工具信息
-#include "..\Tools\Buffer.h"               // 双缓冲区
+#include "Buffer.h"               // 双缓冲区
 
 /// 词法分析端
-//#include "..\Lexical\BinaryTuple.h"         // 词法二元组接口
-#include "..\Lexical\Lexical.h"             // 词法分析器主控程序
+//#include "BinaryTuple.h"   //  #include "..\Lexical\BinaryTuple.h"         // 词法二元组接口
+#include "Lexical.h"    //  #include "..\Lexical\Lexical.h"             // 词法分析器主控程序
 
 /// 语法分析器
-#include "..\Parser\Parser.h"               // 语法分析主控程序
+#include "Parser.h"    //  #include "..\Parser\Parser.h"               // 语法分析主控程序
 
 /// 符号表信息
-#include "..\Table\SymbolTable.h"
+#include "SymbolTable.h"
 
 /// 插桩器信息
-#include "..\Prop\Prop.h"
+#include "Prop.h"
 
 /// 宏定义函数的定义方式信息
 #ifndef PUBLIC_and_PRIVATE

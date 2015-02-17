@@ -19,7 +19,7 @@
 
 
 
-#include "..\Lexical\TokenKind.h"
+#include "TokenKind.h"
 
 
 #define UNKNOWVALUE -1

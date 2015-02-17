@@ -70,12 +70,12 @@
 #define BINARYTUPLE_H_INCLUDED
 
 
-#include "..\Config\Config.h"
+#include "Config.h"     //  #include "..\Config\Config.h"
 
 
-#include "..\Lexical\TokenKind.h"           // 种别信息
-#include "..\Tools\Files.h"          // 文件处理接口
-#include "..\Tools\Errors.h"
+#include "TokenKind.h"    //  #include "..\Lexical\TokenKind.h"           // 种别信息
+#include "Files.h"          // 文件处理接口
+#include "Errors.h"
 
 
 /// 宏定义函数的定义方式信息

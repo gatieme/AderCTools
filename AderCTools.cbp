@@ -22,6 +22,16 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="K:/AderStep/AderCTools/" />
+					<Add directory="K:/AderStep/AderCTools/Config" />
+					<Add directory="K:/AderStep/AderCTools/Global" />
+					<Add directory="K:/AderStep/AderCTools/Lexical" />
+					<Add directory="K:/AderStep/AderCTools/Parser" />
+					<Add directory="K:/AderStep/AderCTools/Preprocessor" />
+					<Add directory="K:/AderStep/AderCTools/Prop" />
+					<Add directory="K:/AderStep/AderCTools/Semantic" />
+					<Add directory="K:/AderStep/AderCTools/Table" />
+					<Add directory="K:/AderStep/AderCTools/Tools" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />

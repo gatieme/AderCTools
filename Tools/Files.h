@@ -15,7 +15,7 @@
 #ifndef FILES_H
 #define FILES_H
 
-#include "..\Config\Config.h"     // Global compiler configuration file
+#include "Config.h"     //  #include "..\Config\Config.h"     // Global compiler configuration file
 
 
 

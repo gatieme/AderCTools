@@ -13,8 +13,8 @@
 
 
 
-#include "..\Tools\Errors.h"
-#include "..\Global\CTools.h"
+#include "Errors.h"
+#include "CTools.h"    //  #include "..\Global\CTools.h"
 
 
 

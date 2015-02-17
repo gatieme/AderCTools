@@ -17,9 +17,9 @@
 
 
 
-#include "..\Preprocessor\Preprocessor.h"               // 预处理函数接口
-#include "..\Tools\Errors.h"                     // 错误定位信息
-#include "..\Tools\Buffer.h"
+#include "Preprocessor.h"               // 预处理函数接口
+#include "Errors.h"                     // 错误定位信息
+#include "Buffer.h"
 
 /// Preprocessor函数声明
 #ifdef PUBLIC_and_PRIVATE

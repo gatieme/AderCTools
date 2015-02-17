@@ -14,7 +14,7 @@
 
 
 
-#include "..\Global\CTools.h"
+#include "CTools.h"    //  #include "..\Global\CTools.h"
 
 
 
