@@ -1,16 +1,9 @@
-GITHUB_COMMIT="修改了makefile"
-
-
 ROOT_DIR = $(shell pwd)
 PLATFORM=$(shell $(ROOT_DIR)/systype.sh)
 
-ifeq ($(PLATFORM), linux)
-LIB_FILE_SUFFIX = a
-DLL_FILE_SUFFIX = so
-else
+ifeq ($(PLATFORM), "windows")
 SHELL=cmd.exe
-LIB_FILE_SUFFIX = lib
-DLL_FILE_SUFFIX = dll
+else
 
 endif
 
@@ -60,42 +53,25 @@ RES_ROOT_DIR     =  $(BIN_ROOT_DIR)Res/
 # the elf file directory
 #--------------------------
 BIN_ROOT_DIR      = ./bin/
-DLL = $(BIN_ROOT_DIR)libCTools.$(DLL_FILE_SUFFIX)
+DLL = $(BIN_ROOT_DIR)libCTools.dll
 LIB_DIR = $(BIN_ROOT_DIR)
 
 #  PROP
-PROP_DLL_ELF = $(BIN_ROOT_DIR)prop-dll.exe
-PROP_LIB_ELF = $(BIN_ROOT_DIR)prop-static.exe
+PROP_ELF = $(BIN_ROOT_DIR)prop.exe
 PROP_ICO = $(ICO_ROOT_DIR)prop.ico
-ifeq ($(PLATFORM), windows)
-PROP_RES = $(PROP_RES)
-else
-PROP_RES =
-endif
+PROP_RES = $(RES_ROOT_DIR)Prop.res
+
 
 #  CTools
 LEXICAL_ELF = $(BIN_ROOT_DIR)Lexical.exe
 LEXICAL_ICO = $(ICO_ROOT_DIR)Lexical.ico
-ifeq ($(PLATFORM), windows)
 LEXICAL_RES = $(RES_ROOT_DIR)Lexical.res
-else
-LEXICAL_RES =
-endif
-
 
 #  Parser
 PARSER_ELF = $(BIN_ROOT_DIR)Parser.exe
 PARSER_ICO = $(ICO_ROOT_DIR)Parser.ico
-ifeq ($(PLATFORM), windows)
 PARSER_RES = $(RES_ROOT_DIR)Parser.res
-else
-PARSER_RES =
-endif
 
-
-OBJ_FILES = $(OBJ_CONFIG_FILE) $(OBJ_TOOLS_FILE) 	\
-			$(OBJ_LEXICAL_FILE) $(OBJ_PARSER_FILE) 	\
-			$(OBJ_PROP_FILE) $(OBJ_GLOBAL_FILE)
 
 CC = gcc
 
@@ -103,53 +79,42 @@ CC = gcc
 #  the compile options
 CFLAGS = -Wall -std=c99 -O2 -pedantic -Wextra
 SHAREDLIB_LINK_OPTIONS = -shared
-
-ifeq ($(PLATFORM), windows)
 FPIC =
-else
-FPIC = -fPIC
-endif
 #-Wl,-soname,
 #  the include directory
 INC = -I./Config -I./Tools -I./Lexical -I./Parser -I./Prop -I./Table -I./Global
 
 
-target : $(PROP_DLL_ELF) $(PROP_LIB_ELF) 
-
-all	:	target
 
 
 # Use the Dynamic Link Library libCTools.so to complie the EIF
-$(PROP_DLL_ELF): $(OBJ_GLOBAL_FILE) $(DLL)
+$(PROP_ELF): $(OBJ_GLOBAL_FILE) $(DLL)
 	make res
-	gcc $(OBJ_GLOBAL_FILE) $(PROP_RES) -o $@  -L$(LIB_DIR) -lCTools
-
-$(PROP_LIB_ELF): $(OBJ_FILES)
-	gcc $^ $(PROP_RES) -o $@
+	gcc $(OBJ_GLOBAL_FILE) $(RES_ROOT_DIR)Prop.res -o $@  -L$(LIB_DIR) -lCTools
 
 #  Complie the Dynamic Link Library libCTools.so
-$(DLL):$(OBJ_FILES)
-	gcc $(SHAREDLIB_LINK_OPTIONS) $(FPIC) $(LDFLAGS) $^ -o $@
+$(DLL):$(OBJ_CONFIG_FILE) $(OBJ_TOOLS_FILE) $(OBJ_LEXICAL_FILE) $(OBJ_PARSER_FILE) $(OBJ_PROP_FILE) $(OBJ_GLOBAL_FILE)
+	gcc $(SHAREDLIB_LINK_OPTIONS) $(LDFLAGS) -o $@ $^
 
 #  Complie Config Directory
 $(OBJ_CONFIG_DIR)%.o:$(SRC_CONFIG_DIR)%.c
-	gcc $(FPIC) $(CFLAGS) -c $^ -o $@ $(INC)
+	gcc $(fPIC) $(CFLAGS) -c $^ -o $@ $(INC)
 
 #  Complie Tools Package
 $(OBJ_TOOLS_DIR)%.o:$(SRC_TOOLS_DIR)%.c
-	gcc $(FPIC) $(CFLAGS) -c $^ -o $@ $(INC)
+	gcc $(fPIC) $(CFLAGS) -c $^ -o $@ $(INC)
 
 #  Complier Lexical Package
 $(OBJ_LEXICAL_DIR)%.o:$(SRC_LEXICAL_DIR)%.c
-	gcc $(FPIC) $(CFLAGS) -c $^ -o $@ $(INC)
+	gcc $(fPIC) $(CFLAGS) -c $^ -o $@ $(INC)
 
 #  Parser语法分析
 $(OBJ_PARSER_DIR)%.o:$(SRC_PARSER_DIR)%.c
-	gcc $(FPIC) $(CFLAGS) -c $^ -o $@ $(INC)
+	gcc $(fPIC) $(CFLAGS) -c $^ -o $@ $(INC)
 
 #  插桩器
 $(OBJ_PROP_DIR)%.o:$(SRC_PROP_DIR)%.c
-	gcc $(FPIC) $(CFLAGS) -c $^ -o $@ $(INC)
+	gcc $(CFLAGS) -c $^ -o $@ $(INC)
 
 
 $(RES_ROOT_DIR)%.res:$(ICO_ROOT_DIR)%.rc
@@ -157,7 +122,7 @@ $(RES_ROOT_DIR)%.res:$(ICO_ROOT_DIR)%.rc
 
 #  global全局主文件
 $(OBJ_GLOBAL_DIR)%.o:$(SRC_GLOBAL_DIR)%.c
-	gcc $(FPIC) $(CFLAGS) -c $^ -o $@ $(INC)
+	gcc $(CFLAGS) -c $^ -o $@ $(INC)
 
 
 
@@ -167,31 +132,19 @@ static:
 
 .PHONY: clean
 clean:
-	rm  -rf $(OBJ_CONFIG_FILE)
-	rm	-rf $(OBJ_GLOBAL_FILE)
-	rm	-rf $(OBJ_LEXICAL_FILE)
-	rm	-rf $(OBJ_PARSER_FILE)
-	rm	-rf $(OBJ_PROP_FILE)
-	rm	-rf $(OBJ_TOOLS_FILE)
-	rm	-rf $(OBJ_ROOT_DIR)CTools.res
-	rm  -rf $(DLL)
-	rm  -rf $(ELF)
+	rm  $(OBJ_CONFIG_FILE)
+	rm	$(OBJ_GLOBAL_FILE)
+	rm	$(OBJ_LEXICAL_FILE)
+	rm	$(OBJ_PARSER_FILE)
+	rm	$(OBJ_PROP_FILE)
+	rm	$(OBJ_TOOLS_FILE)
+	rm	$(OBJ_ROOT_DIR)CTools.res
+	rm  $(DLL)
+	rm  $(ELF)
 
 
 .PHONY: res
-ifeq ($(PLATFORM), linux)
-res	:
-	@echo "you can't res in linux..."
-else
 res:
-	dres  -J rc -O coff -i $(ICO_ROOT_DIR)Prop.rc -o $(PROP_RES)
+	dres  -J rc -O coff -i $(ICO_ROOT_DIR)Prop.rc -o $(RES_ROOT_DIR)Prop.res
 	dres  -J rc -O coff -i $(ICO_ROOT_DIR)Lexical.rc -o $(RES_ROOT_DIR)Lexical.res
 	dres  -J rc -O coff -i $(ICO_ROOT_DIR)Parser.rc -o $(RES_ROOT_DIR)Parser.res
-endif
-
-
-.PHONY	:	github
-github :
-	git add -A
-	git commit -m $(GITHUB_COMMIT)
-	git push origin master
