@@ -1,4 +1,4 @@
-GITHUB_COMMIT="修改了makefile"
+GITHUB_COMMIT="修改了makefile, 同时支持window和linux系统..."
 
 
 ROOT_DIR = $(shell pwd)
