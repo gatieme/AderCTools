@@ -1,4 +1,4 @@
-GITHUB_COMMIT="修改了makefile, 编译出Lexical和Prop等多个可执行文件..."
+GITHUB_COMMIT="增加了README..."
 
 
 ROOT_DIR = $(shell pwd)
@@ -30,7 +30,7 @@ SRC_GLOBAL_DIR	 = $(SRC_ROOT_DIR)Global/
 #--------------------------
 # the objectfile directory
 #--------------------------
-OBJ_ROOT_DIR     = obj/
+OBJ_ROOT_DIR     = .obj/
 OBJ_CONFIG_DIR	 = $(OBJ_ROOT_DIR)Config/
 OBJ_TOOLS_DIR    = $(OBJ_ROOT_DIR)Tools/
 OBJ_LEXICAL_DIR  = $(OBJ_ROOT_DIR)Lexical/
@@ -246,8 +246,8 @@ endif
 
 
 objdir	:
-	mkdir -p obj
-	cd obj && mkdir -p Config Global Lexical Parser Prop Release Tools
+	mkdir -p .obj
+	cd .obj && mkdir -p Config Global Lexical Parser Prop Release Tools
 
 
 .PHONY	:	github
