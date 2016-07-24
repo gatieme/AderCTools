@@ -1,1 +1,0 @@
-can't open the source file...[.\TEST\Bug\bug8-1.c]
