@@ -1109,7 +1109,7 @@ BinaryTuple BufferLexical(const char *sourFile)
 // 对源文件进行词法分析
 // 如果源文件以.c或者.h为后缀名, 则默认当作源文件进行词法分析
 // 如果文件以.i为后缀,　则默认当作预处理文件进行编译
-void MainOfLexical( )    // 待处理源文件
+void MainOfLexical( )   // 待处理源文件
 {
     #ifdef SYS_WINDOWS_DEF
     system("title 词法分析器");
@@ -1128,7 +1128,7 @@ void MainOfLexical( )    // 待处理源文件
         VisitTuple(douTuple);            // 遍历二元组信息, 查找二元组正确性
         #endif
 
-        DestroyTuple(douTuple);                // 清空二元组空间为系统节省内存空间
+        //DestroyTuple(douTuple);                // 清空二元组空间为系统节省内存空间
     }
 
     #ifdef LEXICAL_HELPS_DEFINE

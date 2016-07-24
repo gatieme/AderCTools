@@ -28,20 +28,37 @@
 
 
 
-int main(int argc, char **argv)
+int main(int argc, char **argv/*char *argv[]*/)
 {
-    // printf("%s\n", LineDefineStr);
-    // printf("%s\n", FileOpenDefineStr);
-    // printf("%s\n", StartDefineStr);
-    // freopen("out-bug.txt", "w", stdout);
+    //MainOfLexical( );
+    char sourceFile[FILE_NAME_SIZE];        // 源文件名
+    BinaryTuple douTuple = NULL;               // 二元组信息
 
-    MainOfLexical( );
-//
-//    #ifndef PROP_REDUCTION_DEFINE
-//    ParseFilePropRed("out_prop.c", ".\\TEST\\Bug\\bug8-1.c");
-//    #endif  // PROP_REDUCTION_DEFINE
+    if(argc > 2)
+    {
+        printf("usage : %s [ source.c] \n", argv[1]);
+    }
+    else if(argc == 2)
+    {
+        strcpy(sourceFile, argv[1]);
+    }
+    else/* if(argc == 1)*/
+    {
+        printf("please input the fiel you want to lexical : ");
+        scanf("%s", sourceFile);
+    }
 
-    PAUSE( );
+    #ifdef SYS_WINDOWS_DEF
+    system("title 词法分析器");
+    system("color 00");
+    #endif      // SYS_WINDOWS_DEF
+
+
+
+    douTuple = BufferLexical(sourceFile);      // 直接处理源文件
+    VisitTuple(douTuple);                    // 遍历二元组信息, 查找二元组正确性
+
+
     return EXIT_SUCCESS;
 }
 

@@ -106,7 +106,7 @@ CC = gcc
 
 
 #  the compile options
-CFLAGS = -Wall -std=c99 -O2 -pedantic -Wextra
+CFLAGS = -Wall -std=c99 -O2 -pedantic -Wextra -g
 SHAREDLIB_LINK_OPTIONS = -shared
 
 ifeq ($(PLATFORM), windows)
