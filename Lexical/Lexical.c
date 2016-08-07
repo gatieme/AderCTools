@@ -1128,7 +1128,7 @@ void MainOfLexical( )   // 待处理源文件
         VisitTuple(douTuple);            // 遍历二元组信息, 查找二元组正确性
         #endif
 
-        //DestroyTuple(douTuple);                // 清空二元组空间为系统节省内存空间
+        DestroyTuple(douTuple);                // 清空二元组空间为系统节省内存空间
     }
 
     #ifdef LEXICAL_HELPS_DEFINE
@@ -1139,6 +1139,7 @@ void MainOfLexical( )   // 待处理源文件
     #ifdef LEXICAL_DEBUG_DEFINE
     PAUSE( );
     #endif
+
 }
 
 

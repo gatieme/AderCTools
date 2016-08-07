@@ -261,6 +261,7 @@ void ShowTupleNode(TupleNode *pNode)
 //    printf("Line = %d  ", pNode->m_tuple.m_coord.m_fileLine);
 //    printf("Begi = %d ", pNode->m_tuple.m_coord.m_fileBegOffset);
 //    printf("Endl = %d ", pNode->m_tuple.m_coord.m_fileEndOffset);
+
     ShowCoord(&(pNode->m_tuple.m_coord));
     ShowTupleData(pNode);
     printf("\n");
@@ -305,7 +306,7 @@ void FreeNode(TupleNode *pNode)
         #ifdef LEXICAL_DEBUG_DEFINE
         printf("销毁了词法位置信息的文件名指针域\n");
         #endif // LEXICAL_DEBUG_DEFINE
-        free(pNode->m_tuple.m_coord.m_fileName);
+        //free(pNode->m_tuple.m_coord.m_fileName);
     }
         /// 0.3.4之后这个函数需要重新定义
     switch((int)pNode->m_tuple.m_kind)          // 依据当前此法结点的编码
@@ -495,6 +496,12 @@ BinaryTuple InsertEndToken(TupleNode *pNode)
     return pNode;
 }
 
+//  判断当前节点是不是END词法节点
+bool IsEndToken(TupleNode *pNode)
+{
+    return (pNode->m_tuple.m_kind == TOKEN_END
+         || pNode->m_tuple.m_data.m_keyCode == TOKEN_END);           // 直接让指针域指向字符串的地址
+}
 
 // 输出每个二元组Node结点的信息
 void ShowTupleData(TupleNode *pNode)
@@ -504,7 +511,8 @@ void ShowTupleData(TupleNode *pNode)
     {
         case TOKEN_END               :                  // 标识符号
 		{
-            printf("[%d, %d]", TOKEN_END, pNode->m_tuple.m_data.m_keyCode);
+            //printf("[%d, %d]", TOKEN_END, pNode->m_tuple.m_data.m_keyCode);
+            printf("[END, END]", TOKEN_END, pNode->m_tuple.m_data.m_keyCode);
 			break;
 		}
 		case TOKEN_NULL              :

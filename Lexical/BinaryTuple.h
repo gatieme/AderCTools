@@ -218,11 +218,15 @@ PUBLIC TupleNode*
 InsertEndToken(TupleNode *pNode);                       // 在词法二元组链表的最后添加上终结标识
 #
 #
+PUBLIC
+bool IsEndToken(TupleNode *pNode);                      //  判断当前节点是不是ENR词法结点
+#
+#
 /// 遍历词法二元数组
 PUBLIC void
 VisitTuple(
-           BinaryTuple douTuple);                   // 二元组信息[二元组结点的指针头]
-#define visit_tuple VisitTuple                 // 提供C命名方式的函数调用接口
+           BinaryTuple douTuple);                       // 二元组信息[二元组结点的指针头]
+#define visit_tuple VisitTuple                          // 提供C命名方式的函数调用接口
 #
 #
 /// 清除词法二元组信息

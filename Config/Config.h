@@ -39,7 +39,7 @@
 //
 //
 //////////////////////////////////////////////////////////////////////////////////////////
-#define SYS_WINDOWS_DEF
+//#define SYS_WINDOWS_DEF
 
 #ifdef SYS_WINDOWS_DEF
 #
@@ -202,11 +202,10 @@
 #
 // °æ±¾Êä³öº¯Êý
 #define  VERSION( ) do                                                                              \
-                    {   printf("\t\t**************************************************\n");         \
-                        printf("\t\t**  Wacky Window (c) 2012 Wacky SoftWare. Inc.  **\n");         \
-                        printf("\t\t**     Complied on %s at %s      **\n", __DATE__, __TIME__);    \
-                        printf("\t\t**************************************************\n");         \
-                        PAUSE( );                                                                   \
+                    {   printf("\t*********************************************************\n");         \
+                        printf("\t**  AderCTools Window (c) 2014 gatieme @AderStep Inc.  **\n");         \
+                        printf("\t**     Complied on %s at %s             **\n", __DATE__, __TIME__);    \
+                        printf("\t*********************************************************\n");         \
                     }while( 0 );
 #
 #

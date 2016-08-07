@@ -48,7 +48,7 @@ int main(int argc, char **argv/*char *argv[]*/)
         scanf("%s", sourceFile);
     }
 
-    #ifdef SYS_WINDOWS_DEF
+    #if defined(SYS_WINDOWS_DEF)
     system("title 词法分析器");
     system("color 00");
     #endif      // SYS_WINDOWS_DEF
@@ -57,6 +57,10 @@ int main(int argc, char **argv/*char *argv[]*/)
 
     douTuple = BufferLexical(sourceFile);      // 直接处理源文件
     VisitTuple(douTuple);                    // 遍历二元组信息, 查找二元组正确性
+
+    DestroyTuple(douTuple);                // 清空二元组空间为系统节省内存空间
+
+    VERSION( );
 
 
     return EXIT_SUCCESS;

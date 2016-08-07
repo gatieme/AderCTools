@@ -1,4 +1,4 @@
-GITHUB_COMMIT="增加了README..."
+GITHUB_COMMIT="修复了一处指针越界问题..."
 
 
 ROOT_DIR = $(shell pwd)
@@ -238,9 +238,7 @@ ifeq ($(PLATFORM), linux)
 res	:
 	@echo "you can't res in linux..."
 else
-res:
-	dres  -J rc -O coff -i $(ICO_ROOT_DIR)Prop.rc -o $(PROP_RES)
-	dres  -J rc -O coff -i $(ICO_ROOT_DIR)Lexical.rc -o $(RES_ROOT_DIR)Lexical.res
+res: dres  -J rc -O coff -i $(ICO_ROOT_DIR)Prop.rc -o $(PROP_RES) dres  -J rc -O coff -i $(ICO_ROOT_DIR)Lexical.rc -o $(RES_ROOT_DIR)Lexical.res
 	dres  -J rc -O coff -i $(ICO_ROOT_DIR)Parser.rc -o $(RES_ROOT_DIR)Parser.res
 endif
 
@@ -249,6 +247,9 @@ objdir	:
 	mkdir -p .obj
 	cd .obj && mkdir -p Config Global Lexical Parser Prop Release Tools
 
+
+run_lexical	:	$(LEXICAL_LIB_ELF)
+	cd bin && ./lexical-static.exe ./test.c
 
 .PHONY	:	github
 github :
