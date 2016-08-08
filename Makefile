@@ -1,4 +1,4 @@
-GITHUB_COMMIT="完善了词法分析和语法分析的测试用例..."
+GITHUB_COMMIT="完善了词法分析和语法分析的测试用例, 更新了README.md..."
 
 
 ROOT_DIR = $(shell pwd)
