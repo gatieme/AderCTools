@@ -11,7 +11,7 @@ AderCTools是一个简单的编译器工具,
 
 *   代码插桩Prop
 
-#结构
+#1	结构
 -------
 
 
@@ -28,16 +28,59 @@ AderCTools是一个简单的编译器工具,
 
 
 
-#How to make
+#2	How to make
 -------
 
-
-在代码的源目录
 
 ```c
 make
 ```
 
+#3	How to run
+-------
 
 
+##3.1	被测程序源代码
+-------
 
+测试代码, 位于./bin/test.c
+
+```cpp
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(void)
+{
+
+    return EXIT_SUCCESS;
+}
+```
+
+
+##3.2	词法分析
+-------
+
+
+运行词法分析器
+
+```cpp
+make run_lexcial
+```
+
+对test.c进行词法分析的结果
+
+![词法分析器](./images/run_lexical.png)
+
+##3.3	语法分析
+-------
+
+运行语法分析器
+
+```cpp
+make run_parser
+```
+
+对test.c进行语法分析的结果
+
+![语法分析器](./images/run_parser.png)

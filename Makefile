@@ -1,4 +1,4 @@
-GITHUB_COMMIT="修复了一处指针越界问题..."
+GITHUB_COMMIT="完善了词法分析和语法分析的测试用例..."
 
 
 ROOT_DIR = $(shell pwd)
@@ -74,7 +74,7 @@ else
 PROP_RES =
 endif
 
-#  CTools
+#  Lexical
 LEXICAL_DLL_ELF = $(BIN_ROOT_DIR)lexical-dynamic.exe
 LEXICAL_LIB_ELF = $(BIN_ROOT_DIR)lexical-static.exe
 OBJ_GLOBAL_LEXICAL_FILE = $(OBJ_GLOBAL_DIR)Lexical.o
@@ -87,9 +87,10 @@ endif
 
 
 #  Parser
-PARSER_ELF = $(BIN_ROOT_DIR)Parser.exe
+PARSER_DLL_ELF = $(BIN_ROOT_DIR)parser-dynamic.exe
+PARSER_LIB_ELF = $(BIN_ROOT_DIR)parser-static.exe
+OBJ_GLOBAL_PARSER_FILE = $(OBJ_GLOBAL_DIR)Parser.o
 PARSER_ICO = $(ICO_ROOT_DIR)Parser.ico
-OBJ_GLOBAL_PARSE_FILE = $(OBJ_GLOBAL_DIR)Parser.o
 ifeq ($(PLATFORM), windows)
 PARSER_RES = $(RES_ROOT_DIR)Parser.res
 else
@@ -99,7 +100,7 @@ endif
 
 OBJ_FILES = $(OBJ_CONFIG_FILE) $(OBJ_TOOLS_FILE) 	\
 			$(OBJ_LEXICAL_FILE) $(OBJ_PARSER_FILE) 	\
-			$(OBJ_PROP_FILE) 
+			$(OBJ_PROP_FILE)
 			#	$(OBJ_GLOBAL_FILE) non't include global files
 
 CC = gcc
@@ -121,7 +122,7 @@ INC = -I./Config -I./Tools -I./Lexical -I./Parser -I./Prop -I./Table -I./Global
 
 target	:	$(LEXICAL_DLL_ELF) $(LEXICAL_LIB_ELF)	\
 			$(PARSER_DLL_ELF) $(PARSER_LIB_ELF)		\
-			$(PROP_DLL_ELF) $(PROP_LIB_ELF) 
+			$(PROP_DLL_ELF) $(PROP_LIB_ELF)
 
 all	:	target
 
@@ -142,7 +143,7 @@ $(LEXICAL_LIB_ELF): $(OBJ_FILES) $(OBJ_GLOBAL_LEXICAL_FILE)
 
 
 
-##	prop
+##	Parser
 # Use the Dynamic Link Library libCTools.so to complie the EIF
 $(PARSER_DLL_ELF): $(OBJ_GLOBAL_PARSER_FILE) $(DLL)
 	make res
@@ -230,7 +231,7 @@ clean:
 	rm  -rf $(target)
 	rm  -rf $(LEXICAL_DLL_ELF) $(LEXICAL_LIB_ELF)	\
 			$(PARSER_DLL_ELF) $(PARSER_LIB_ELF)		\
-			$(PROP_DLL_ELF) $(PROP_LIB_ELF) 
+			$(PROP_DLL_ELF) $(PROP_LIB_ELF)
 
 
 .PHONY: res
@@ -250,6 +251,10 @@ objdir	:
 
 run_lexical	:	$(LEXICAL_LIB_ELF)
 	cd bin && ./lexical-static.exe ./test.c
+
+run_parser	:	$(PARSER_LIB_ELF)
+	cd bin && ./parser-static.exe ./test.c
+
 
 .PHONY	:	github
 github :
