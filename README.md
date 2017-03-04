@@ -33,6 +33,8 @@ AderCTools是一个简单的编译器工具,
 
 
 ```c
+make objdir
+mkdir res # obly for windows
 make
 ```
 
